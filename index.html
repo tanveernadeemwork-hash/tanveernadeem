@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanveer Nadeem — Fractional Marketing Partner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#1A1A1A; --bg-card:#222222; --bg-deep:#141414;
+  --blue:#2B69E6; --yellow:#F7A825;
+  --white:#FFFFFF; --text:#E8E8E8;
+  --text-mid:#BBBBBB; --text-muted:#777777;
+  --border:rgba(255,255,255,0.07);
+  --border-mid:rgba(255,255,255,0.05);
+  --radius:16px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+
+/* BUTTONS */
+.btn-primary{display:inline-block;padding:14px 28px;border-radius:8px;font-size:0.9rem;font-weight:700;font-family:inherit;background:var(--yellow);color:#000;transition:opacity 0.2s,transform 0.2s;cursor:pointer;border:none;white-space:nowrap;}
+.btn-primary:hover{opacity:0.88;transform:translateY(-1px);}
+.btn-secondary{display:inline-block;padding:14px 28px;border-radius:8px;font-size:0.9rem;font-weight:600;font-family:inherit;background:transparent;border:1.5px solid rgba(255,255,255,0.3);color:#DDDDDD;transition:border-color 0.2s,transform 0.2s;cursor:pointer;white-space:nowrap;}
+.btn-secondary:hover{border-color:rgba(255,255,255,0.6);transform:translateY(-1px);}
+.btn-whatsapp{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:8px;font-size:0.9rem;font-weight:700;font-family:inherit;background:#25D366;color:#fff;transition:opacity 0.2s,transform 0.2s;cursor:pointer;border:none;}
+.btn-whatsapp:hover{opacity:0.88;transform:translateY(-1px);}
+.btn-wrap{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 6%;height:68px;background:rgba(26,26,26,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:border-color 0.3s;}
+.logo{font-size:1.15rem;font-weight:800;letter-spacing:-0.02em;color:var(--white);flex-shrink:0;}
+.logo span{color:var(--yellow);}
+.nav-links{display:flex;gap:2rem;font-size:0.84rem;font-weight:600;}
+.nav-links a{color:var(--text-mid);transition:color 0.2s;}
+.nav-links a:hover{color:var(--white);}
+.nav-cta{padding:9px 20px;border-radius:7px;font-size:0.82rem;font-weight:700;background:var(--yellow);color:#000;transition:opacity 0.2s;flex-shrink:0;}
+.nav-cta:hover{opacity:0.88;}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--text-mid);border-radius:2px;transition:all 0.3s;}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(20,20,20,0.98);backdrop-filter:blur(16px);padding:24px 6%;border-bottom:1px solid var(--border);flex-direction:column;gap:20px;z-index:99;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-size:1rem;font-weight:600;color:var(--text-mid);padding:8px 0;border-bottom:1px solid var(--border);}
+.mobile-menu a:last-child{border-bottom:none;}
+
+/* SHARED */
+.section-wrap{padding:90px 6%;}
+.section-wrap.deep{background:var(--bg-deep);border-top:1px solid var(--border-mid);border-bottom:1px solid var(--border-mid);}
+.section-inner{max-width:1200px;margin:0 auto;}
+.eyebrow{font-size:0.66rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--blue);display:flex;align-items:center;gap:10px;margin-bottom:1.2rem;}
+.eyebrow::before{content:'';width:22px;height:1.5px;background:var(--blue);flex-shrink:0;}
+.section-heading{font-size:clamp(1.8rem,3.2vw,2.7rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em;color:var(--white);margin-bottom:0.9rem;}
+.section-sub{font-size:1rem;line-height:1.75;color:var(--text-mid);max-width:560px;margin-bottom:3rem;}
+
+/* HERO */
+#hero{min-height:100vh;background:var(--bg);display:flex;align-items:center;padding:100px 6% 70px;}
+.hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.1fr 0.9fr;gap:4rem;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:30px;font-size:0.7rem;font-weight:600;margin-bottom:1.5rem;background:rgba(247,168,37,0.08);color:var(--yellow);border:1px solid rgba(247,168,37,0.18);}
+.badge-dot{width:7px;height:7px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.hero-eyebrow{font-size:0.66rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:1.3rem;color:var(--blue);display:flex;align-items:center;gap:10px;}
+.hero-eyebrow::before{content:'';width:22px;height:1.5px;background:var(--blue);}
+.hero-content h1{font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:800;line-height:1.07;letter-spacing:-0.04em;margin-bottom:1.3rem;color:var(--white);}
+.hero-content h1 em{font-style:italic;color:var(--blue);font-weight:500;}
+.hero-sub{font-size:1.05rem;line-height:1.8;margin-bottom:2.2rem;max-width:500px;color:var(--text);}
+.hero-photo-wrap{display:flex;flex-direction:column;align-items:center;gap:18px;}
+.hero-photo-circle{width:min(340px,80vw);height:min(340px,80vw);border-radius:50%;overflow:hidden;border:3px solid rgba(247,168,37,0.2);box-shadow:0 0 0 8px rgba(247,168,37,0.04),0 24px 64px rgba(0,0,0,0.4);}
+.hero-photo-circle img{width:100%;height:100%;object-fit:cover;object-position:center top;}
+.hero-photo-card{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border-radius:40px;background:rgba(43,105,230,0.1);border:1px solid rgba(43,105,230,0.2);font-size:0.78rem;font-weight:600;color:var(--text-mid);}
+.hero-photo-card strong{color:var(--white);}
+.hero-photo-card::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--blue);flex-shrink:0;}
+
+/* STATS */
+#stats{background:var(--bg-deep);border-top:1px solid var(--border-mid);border-bottom:1px solid var(--border-mid);}
+.stats-inner{display:grid;grid-template-columns:repeat(4,1fr);max-width:1200px;margin:0 auto;padding:0 6%;}
+.stat{padding:36px 20px;border-right:1px solid var(--border-mid);transition:background 0.2s;}
+.stat:last-child{border-right:none;}
+.stat:hover{background:rgba(247,168,37,0.02);}
+.stat-n{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;margin-bottom:8px;line-height:1;letter-spacing:-0.04em;color:var(--yellow);}
+.stat-l{font-size:0.78rem;line-height:1.55;color:var(--text-mid);}
+
+/* HOW */
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border-mid);border-radius:var(--radius);overflow:hidden;margin-bottom:3rem;}
+.how-card{background:var(--bg-card);padding:38px 30px;transition:background 0.2s;}
+.how-card:hover{background:#272727;}
+.how-num{font-size:0.65rem;font-weight:800;letter-spacing:0.12em;color:var(--yellow);margin-bottom:1.3rem;opacity:0.8;}
+.how-title{font-size:1.08rem;font-weight:800;color:var(--white);margin-bottom:0.9rem;letter-spacing:-0.02em;}
+.how-desc{font-size:0.88rem;line-height:1.8;color:var(--text-mid);}
+
+/* SERVICES */
+.tags-label{font-size:0.62rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1rem;}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid var(--border-mid);}
+.tag{padding:8px 16px;border-radius:30px;font-size:0.8rem;font-weight:600;border:1px solid rgba(255,255,255,0.1);color:var(--text-mid);background:rgba(255,255,255,0.03);transition:all 0.2s;cursor:default;}
+.tag:hover{border-color:rgba(247,168,37,0.4);color:var(--yellow);background:rgba(247,168,37,0.05);}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--border-mid);border-radius:var(--radius);overflow:hidden;margin-bottom:3rem;}
+.service-card{background:var(--bg-card);padding:36px 32px;transition:background 0.2s;}
+.service-card:hover{background:#272727;}
+.service-num{font-size:0.65rem;font-weight:800;letter-spacing:0.1em;color:var(--yellow);margin-bottom:1.2rem;opacity:0.8;}
+.service-title{font-size:1.08rem;font-weight:800;color:var(--white);margin-bottom:0.9rem;letter-spacing:-0.02em;}
+.service-desc{font-size:0.88rem;line-height:1.8;color:var(--text-mid);}
+
+/* EASYDIGZ */
+.easydigz-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.easydigz-client-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:30px;font-size:0.68rem;font-weight:700;background:rgba(247,168,37,0.08);border:1px solid rgba(247,168,37,0.18);color:var(--yellow);margin-bottom:1.5rem;letter-spacing:0.06em;text-transform:uppercase;}
+.easydigz-heading{font-size:clamp(1.6rem,2.8vw,2.4rem);font-weight:800;line-height:1.12;letter-spacing:-0.03em;color:var(--white);margin-bottom:1.5rem;}
+.easydigz-body{font-size:0.94rem;line-height:1.85;color:var(--text-mid);margin-bottom:1.3rem;}
+.easydigz-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2rem;}
+.easydigz-tag{font-size:0.7rem;font-weight:600;padding:5px 13px;border-radius:20px;background:rgba(43,105,230,0.08);border:1px solid rgba(43,105,230,0.18);color:#7BA8F5;}
+.easydigz-right{display:flex;flex-direction:column;gap:14px;padding-top:12px;}
+.ez-stat-card{background:var(--bg-card);border-radius:14px;padding:22px 26px;border:1px solid var(--border-mid);transition:border-color 0.2s;}
+.ez-stat-card:hover{border-color:rgba(247,168,37,0.2);}
+.ez-stat-n{font-size:1.9rem;font-weight:800;color:var(--yellow);letter-spacing:-0.04em;line-height:1;margin-bottom:6px;}
+.ez-stat-l{font-size:0.78rem;color:var(--text-mid);line-height:1.5;}
+.ez-linkedin-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:8px;font-size:0.88rem;font-weight:700;font-family:inherit;background:#0A66C2;color:#fff;transition:opacity 0.2s;margin-top:8px;}
+.ez-linkedin-btn:hover{opacity:0.88;}
+
+/* CTA BAND */
+.cta-band{background:rgba(43,105,230,0.06);border-top:1px solid rgba(43,105,230,0.1);border-bottom:1px solid rgba(43,105,230,0.1);padding:52px 6%;text-align:center;}
+.cta-band-text{font-size:1.1rem;font-weight:600;color:var(--text);margin-bottom:1.4rem;line-height:1.6;}
+.cta-band-text strong{color:var(--white);}
+
+/* CASE CARDS */
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:3rem;}
+.case-card{background:var(--bg-card);border-radius:var(--radius);border:1px solid var(--border-mid);transition:border-color 0.25s,transform 0.25s;display:flex;flex-direction:column;overflow:hidden;}
+.case-card:hover{border-color:rgba(43,105,230,0.3);transform:translateY(-3px);}
+.case-header{padding:22px 24px 0;}
+.case-services{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.case-service-tag{font-size:0.63rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px;background:rgba(43,105,230,0.08);border:1px solid rgba(43,105,230,0.15);color:var(--blue);}
+.case-title{font-size:1.05rem;font-weight:800;color:var(--white);margin-bottom:8px;letter-spacing:-0.02em;}
+.case-desc{font-size:0.84rem;line-height:1.75;color:var(--text-mid);}
+.case-metrics{margin:18px 24px;background:var(--bg-deep);border-radius:12px;border:1px solid var(--border-mid);padding:16px 20px;display:grid;gap:12px;}
+.case-metrics.cols-2{grid-template-columns:1fr 1fr;}
+.case-metrics.cols-3{grid-template-columns:1fr 1fr 1fr;}
+.metric{display:flex;flex-direction:column;gap:3px;}
+.metric-n{font-size:1.35rem;font-weight:800;color:var(--yellow);letter-spacing:-0.03em;line-height:1;}
+.metric-l{font-size:0.68rem;font-weight:600;color:var(--text-muted);line-height:1.4;text-transform:uppercase;letter-spacing:0.06em;}
+.metric:not(:last-child){border-right:1px solid var(--border-mid);padding-right:14px;}
+
+/* PROOF TOGGLE */
+.case-proof-toggle{margin:0 24px 22px;display:flex;flex-direction:column;}
+.proof-btn{background:none;border:none;cursor:pointer;font-family:inherit;font-size:0.75rem;font-weight:700;color:var(--blue);text-align:left;padding:8px 0;display:flex;align-items:center;gap:6px;border-top:1px solid var(--border-mid);transition:color 0.2s;letter-spacing:0.04em;text-transform:uppercase;}
+.proof-btn:hover{color:#5B8CF0;}
+.proof-btn .proof-arrow{transition:transform 0.3s;}
+.proof-btn.open .proof-arrow{transform:rotate(180deg);}
+.proof-img-wrap{display:none;overflow:hidden;border-radius:8px;border:1px solid var(--border-mid);margin-top:8px;}
+.proof-img-wrap.open{display:block;}
+.proof-img-wrap img{width:100%;display:block;}
+
+/* PROOF TABS */
+.proof-tabs{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--border-mid);}
+.proof-tab{flex:1;min-width:80px;text-align:center;background:none;border:none;font-family:inherit;font-size:0.75rem;font-weight:700;color:var(--text-muted);padding:10px 16px;cursor:pointer;letter-spacing:0.04em;text-transform:uppercase;transition:color 0.2s;border-bottom:2px solid transparent;margin-bottom:-1px;}
+.proof-tab.active{color:var(--blue);border-bottom-color:var(--blue);}
+.proof-tab:hover{color:var(--text-mid);}
+.proof-tab-panel{display:none;}
+.proof-tab-panel.active{display:block;}
+.proof-tab-panel img{width:100%;display:block;}
+
+/* MONAL */
+.monal-thumbs{margin:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.monal-thumb{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--border-mid);}
+.monal-thumb img{width:100%;height:130px;object-fit:cover;}
+.monal-thumb-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.75) 0%,transparent 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:10px 12px;}
+.monal-thumb-count{font-size:1.1rem;font-weight:800;color:var(--yellow);line-height:1;}
+.monal-thumb-platform{font-size:0.62rem;font-weight:700;color:rgba(255,255,255,0.65);letter-spacing:0.1em;text-transform:uppercase;}
+.monal-links{margin:0 24px 22px;display:flex;flex-wrap:wrap;gap:10px;padding-top:10px;border-top:1px solid var(--border-mid);}
+.monal-link{font-size:0.75rem;font-weight:700;color:var(--blue);letter-spacing:0.04em;text-transform:uppercase;transition:color 0.2s;}
+.monal-link:hover{color:#5B8CF0;}
+
+/* TESTIMONIAL */
+.testimonial-card{background:var(--bg-card);border-radius:20px;padding:48px 52px;border:1px solid var(--border-mid);position:relative;overflow:hidden;}
+.testimonial-card::before{content:'\201C';font-size:12rem;font-weight:800;color:var(--blue);opacity:0.06;position:absolute;top:-30px;left:30px;line-height:1;font-family:Georgia,serif;pointer-events:none;}
+.testimonial-stars{display:flex;gap:4px;margin-bottom:1.4rem;}
+.testimonial-stars span{color:var(--yellow);font-size:1.1rem;}
+.testimonial-quote{font-size:1.15rem;line-height:1.8;color:var(--white);font-weight:500;margin-bottom:1.8rem;font-style:italic;max-width:700px;}
+.testimonial-author{display:flex;align-items:center;gap:14px;}
+.testimonial-avatar{width:48px;height:48px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;color:#fff;flex-shrink:0;}
+.testimonial-name{font-size:0.95rem;font-weight:800;color:var(--white);}
+.testimonial-role{font-size:0.8rem;color:var(--text-muted);margin-top:2px;}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:2px;background:var(--border-mid);border-radius:var(--radius);overflow:hidden;}
+.faq-item{background:var(--bg-card);}
+.faq-q{width:100%;text-align:left;padding:22px 28px;background:none;border:none;font-family:inherit;font-size:0.95rem;font-weight:700;color:var(--white);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:background 0.2s;word-break:break-word;}
+.faq-q:hover{background:rgba(255,255,255,0.02);}
+.faq-icon{font-size:1.3rem;font-weight:300;color:var(--yellow);flex-shrink:0;transition:transform 0.3s;}
+.faq-a{display:none;padding:0 28px 22px;font-size:0.9rem;line-height:1.8;color:var(--text-mid);}
+.faq-item.open .faq-a{display:block;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+
+/* ABOUT */
+.about-inner{max-width:680px;margin:0 auto;}
+.about-body{font-size:1.02rem;line-height:1.85;color:var(--text);margin-bottom:1.3rem;}
+
+/* CONTACT */
+.contact-inner{max-width:560px;margin:0 auto;text-align:center;}
+.contact-heading{font-size:clamp(2rem,3.5vw,3rem);font-weight:800;letter-spacing:-0.04em;color:var(--white);margin-bottom:1.2rem;}
+.contact-sub{font-size:1rem;line-height:1.8;color:var(--text-mid);margin-bottom:2.2rem;}
+.contact-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:1.4rem;}
+.contact-note{font-size:0.84rem;color:var(--text-muted);}
+.contact-note a{color:var(--text-mid);transition:color 0.2s;}
+.contact-note a:hover{color:var(--white);}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float{position:fixed;bottom:28px;right:28px;z-index:200;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform 0.2s,box-shadow 0.2s;}
+.whatsapp-float:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,0.5);}
+.whatsapp-float svg{width:28px;height:28px;fill:white;}
+
+/* FOOTER */
+footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.footer-logo{font-size:1rem;font-weight:800;color:var(--white);letter-spacing:-0.02em;}
+.footer-logo span{color:var(--yellow);}
+.footer-links{display:flex;align-items:center;gap:1.6rem;font-size:0.82rem;}
+.footer-links a{color:var(--text-muted);transition:color 0.2s;}
+.footer-links a:hover{color:var(--white);}
+.footer-social{display:flex;align-items:center;gap:10px;}
+.social-btn{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--text-mid);transition:all 0.2s;font-size:0.78rem;font-weight:700;}
+.social-btn:hover{background:rgba(247,168,37,0.08);border-color:rgba(247,168,37,0.2);color:var(--yellow);}
+
+/* FADE IN */
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.55s ease,transform 0.55s ease;}
+.fade-in.visible{opacity:1;transform:translateY(0);}
+
+/* ── RESPONSIVE ─────────────────────────────── */
+@media(max-width:1024px){
+  .hero-inner{gap:2.5rem;}
+  .hero-photo-circle{width:260px;height:260px;}
+  .stats-inner{grid-template-columns:repeat(2,1fr);}
+  .stat:nth-child(2){border-right:none;}
+  .stat:nth-child(3){border-top:1px solid var(--border-mid);}
+  .easydigz-inner{grid-template-columns:1fr;gap:3rem;}
+  .cases-grid{grid-template-columns:repeat(2,1fr);}
+  .testimonial-card{padding:36px 36px;}
+}
+
+@media(max-width:767px){
+  nav{padding:0 5%;}
+  .nav-links{display:none;}
+  .nav-toggle{display:flex;}
+  .nav-cta{display:none;}
+  #hero{padding:100px 5% 60px;min-height:auto;}
+  .hero-inner{grid-template-columns:1fr;gap:2.5rem;}
+  .hero-photo-wrap{order:-1;}
+  .hero-photo-circle{width:180px;height:180px;}
+  .section-wrap{padding:70px 5%;}
+  .how-grid{grid-template-columns:1fr;gap:2px;}
+  .services-grid{grid-template-columns:1fr;}
+  .easydigz-inner{grid-template-columns:1fr;gap:2.5rem;}
+  .cases-grid{grid-template-columns:1fr;}
+  .case-header{padding:20px 20px 0;}
+  .case-metrics{margin:14px 20px;padding:14px 16px;}
+  .case-proof-toggle{margin:0 20px 20px;}
+  .monal-thumbs{margin:14px 20px;}
+  .monal-links{margin:0 20px 20px;}
+  .testimonial-card{padding:28px 24px;}
+  .testimonial-quote{font-size:1rem;}
+  .contact-inner{text-align:left;}
+  .contact-btns{justify-content:flex-start;}
+  footer{flex-direction:column;text-align:center;padding:24px 5%;}
+  .footer-links{flex-wrap:wrap;justify-content:center;gap:1rem;}
+  .whatsapp-float{bottom:20px;right:20px;width:50px;height:50px;}
+  .stats-inner{grid-template-columns:1fr 1fr;padding:0 5%;}
+  .stat{padding:28px 14px;}
+  .stat:nth-child(2){border-right:none;}
+  .stat:nth-child(3){border-top:1px solid var(--border-mid);border-right:1px solid var(--border-mid);}
+  .faq-q{font-size:0.88rem;padding:18px 20px;}
+  .faq-a{padding:0 20px 18px;}
+  .proof-tab{font-size:0.7rem;padding:8px 12px;}
+  .metric-n{font-size:1.1rem;}
+}
+
+@media(max-width:400px){
+  .stats-inner{grid-template-columns:1fr;}
+  .stat{border-right:none;border-top:1px solid var(--border-mid);}
+  .stat:first-child{border-top:none;}
+  .btn-wrap{flex-direction:column;}
+  .btn-primary,.btn-secondary{width:100%;text-align:center;}
+  .case-metrics.cols-3{grid-template-columns:1fr 1fr;}
+  .case-header{padding:16px 16px 0;}
+  .case-metrics{margin:12px 16px;padding:12px 14px;}
+  .case-proof-toggle{margin:0 16px 18px;}
+  .monal-thumbs{margin:12px 16px;}
+  .monal-links{margin:0 16px 18px;}
+  .proof-tab{font-size:0.65rem;padding:8px 10px;min-width:60px;}
+}
+
+@media(max-width:360px){
+  .case-metrics.cols-2,.case-metrics.cols-3{grid-template-columns:1fr;}
+  .metric:not(:last-child){border-right:none;border-bottom:1px solid var(--border-mid);padding-right:0;padding-bottom:10px;margin-bottom:4px;}
+  .proof-tabs{flex-direction:column;}
+  .monal-thumbs{grid-template-columns:1fr;}
+  .hero-content h1{font-size:1.8rem;}
+  .faq-q{padding:16px;}
+  .faq-a{padding:0 16px 16px;}
+}
+</style>
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/447956044519" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Tanveer<span>.</span></div>
+  <div class="nav-links">
+    <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </div>
+  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+  <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="nav-cta">Book a Call</a>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#work" onclick="closeMenu()">Work</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary" style="text-align:center;">Book a Discovery Call</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-content fade-in">
+      <div class="hero-badge"><div class="badge-dot"></div>Fractional Marketing Partner</div>
+      <div class="hero-eyebrow">Founder-Led Businesses</div>
+      <h1>Your product is ready. Your marketing needs to <em>catch up.</em></h1>
+      <p class="hero-sub">I work with founders who are scaling but don't have the time, team, or system to make marketing actually work. I come in, figure out what needs to happen, build the infrastructure, and run it. You stay focused on the product. I own the marketing.</p>
+      <div class="btn-wrap">
+        <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a>
+        <a href="#work" class="btn-secondary">See My Work</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap fade-in" style="transition-delay:0.15s;">
+      <div class="hero-photo-circle">
+        <img src="images/tanveer.jpg" alt="Tanveer Nadeem">
+      </div>
+      <div class="hero-photo-card">Currently embedded with <strong>EasyDigz</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div id="stats">
+  <div class="stats-inner">
+    <div class="stat fade-in"><div class="stat-n">10,000+</div><div class="stat-l">Email list grown and managed for a PropTech SaaS company</div></div>
+    <div class="stat fade-in" style="transition-delay:0.1s;"><div class="stat-n">7x ROAS</div><div class="stat-l">Return on ad spend delivered for a furniture e-commerce brand</div></div>
+    <div class="stat fade-in" style="transition-delay:0.2s;"><div class="stat-n">First page</div><div class="stat-l">Google rankings achieved in competitive real estate and legal niches</div></div>
+    <div class="stat fade-in" style="transition-delay:0.3s;"><div class="stat-n">1.9M+</div><div class="stat-l">Organic impressions generated for a legal compliance platform</div></div>
+  </div>
+</div>
+
+<!-- HOW I WORK -->
+<div class="section-wrap">
+  <div class="section-inner">
+    <div class="eyebrow">How it works</div>
+    <h2 class="section-heading">No guesswork. No long onboarding.<br>No waiting three months to see results.</h2>
+    <p class="section-sub">Here is exactly how I work.</p>
+    <div class="how-grid">
+      <div class="how-card fade-in"><div class="how-num">01</div><div class="how-title">Audit and Strategy</div><div class="how-desc">Before anything gets executed, I spend two weeks understanding your business. Where you are, where you want to get to, what is working and what is not. You get a clear strategy and a roadmap before a single campaign goes live.</div></div>
+      <div class="how-card fade-in" style="transition-delay:0.1s;"><div class="how-num">02</div><div class="how-title">Build the System</div><div class="how-desc">Once we know the direction, I build the infrastructure. Content pipelines, campaign structures, workflows, email sequences. Everything set up to run efficiently without you being pulled into every decision.</div></div>
+      <div class="how-card fade-in" style="transition-delay:0.2s;"><div class="how-num">03</div><div class="how-title">Run and Grow</div><div class="how-desc">Then I run it. Campaigns, content, reporting, optimisation. You get full visibility into what is happening and why, without it landing on your plate. I stay close, move fast and treat your business like it is my own.</div></div>
+    </div>
+    <div style="display:flex;justify-content:center;"><a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="section-wrap deep">
+  <div class="section-inner">
+    <div class="eyebrow">What I do</div>
+    <h2 class="section-heading">Everything your marketing needs.<br>One person who owns it.</h2>
+    <p class="section-sub">I don't offer packages. Every engagement starts with understanding what your business actually needs. But here is what I bring to the table.</p>
+    <div class="tags-label">Skills and capabilities</div>
+    <div class="tags">
+      <div class="tag">Marketing Strategy</div><div class="tag">Paid Ads</div><div class="tag">SEO</div>
+      <div class="tag">Content Marketing</div><div class="tag">Video Marketing</div><div class="tag">Email Marketing</div>
+      <div class="tag">Social Media</div><div class="tag">Webinars</div><div class="tag">Demand Generation</div>
+      <div class="tag">Campaign Management</div><div class="tag">Content Pipelines</div><div class="tag">Marketing Workflows</div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in"><div class="service-num">01</div><div class="service-title">Marketing Strategy and Roadmap</div><div class="service-desc">Before anything gets executed, I audit where you are, identify the gaps, and map out a strategy that makes sense for your stage and goals. You get clarity before you spend a penny.</div></div>
+      <div class="service-card fade-in" style="transition-delay:0.1s;"><div class="service-num">02</div><div class="service-title">Content and Campaign Execution</div><div class="service-desc">I build content pipelines, run campaigns, manage email sequences and webinars. Everything moving consistently, without you chasing anyone to get it done.</div></div>
+      <div class="service-card fade-in" style="transition-delay:0.1s;"><div class="service-num">03</div><div class="service-title">Paid Media Management</div><div class="service-desc">When you are ready to put budget behind growth, I plan and manage paid campaigns across Google and Meta. Every pound and dollar tracked and tied back to real outcomes.</div></div>
+      <div class="service-card fade-in" style="transition-delay:0.2s;"><div class="service-num">04</div><div class="service-title">SEO and Content Foundations</div><div class="service-desc">Long term visibility does not happen by accident. I build the SEO and content foundations that bring the right people to you consistently, without depending entirely on paid spend.</div></div>
+    </div>
+    <div style="display:flex;justify-content:center;"><a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a></div>
+  </div>
+</div>
+
+<!-- EASYDIGZ -->
+<div id="work" class="section-wrap">
+  <div class="easydigz-inner">
+    <div class="fade-in">
+      <div class="eyebrow">Featured Work</div>
+      <div class="easydigz-client-tag">EasyDigz &middot; PropTech SaaS &middot; Triangle, NC &middot; Ongoing</div>
+      <h2 class="easydigz-heading">They had a product that worked. Marketing was starting from zero.</h2>
+      <p class="easydigz-body">When EasyDigz brought me in, there was nothing to inherit. No content pipeline, no email campaigns, no video, no webinar program. The brand had no presence and the product — a white-label real estate platform for agents and brokers — needed real education to land with the right audience.</p>
+      <p class="easydigz-body">I started with a two-week audit, then built the entire marketing system around one core workflow. Plan the content, promote it through a multi-touch email sequence, run it live, record it, cut it into short-form clips, distribute across channels, and repeat. That one workflow powered everything simultaneously without adding workload.</p>
+      <p class="easydigz-body">Today EasyDigz has a 10,000 plus agent email list, 40 plus videos published, a fully operational content engine, and paid campaigns running on LinkedIn. I am still embedded with them and the scope keeps growing.</p>
+      <div class="easydigz-tags">
+        <span class="easydigz-tag">10,000+ agent email list</span><span class="easydigz-tag">40+ videos published</span>
+        <span class="easydigz-tag">3 live webinars</span><span class="easydigz-tag">30-day content series</span>
+        <span class="easydigz-tag">Expo presentations</span><span class="easydigz-tag">Ongoing and growing</span>
+      </div>
+      <div class="btn-wrap">
+        <a href="#cases" class="btn-secondary">See All Work</a>
+        <a href="https://www.linkedin.com/company/easydigz" target="_blank" class="ez-linkedin-btn">
+          <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          View Live Work on LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="easydigz-right fade-in" style="transition-delay:0.15s;">
+      <div class="ez-stat-card"><div class="ez-stat-n">10,000+</div><div class="ez-stat-l">Real estate agents on the email list, actively managed with multi-touch campaign sequences</div></div>
+      <div class="ez-stat-card"><div class="ez-stat-n">40+</div><div class="ez-stat-l">Marketing videos published across social and platform channels</div></div>
+      <div class="ez-stat-card"><div class="ez-stat-n">30</div><div class="ez-stat-l">Videos produced in a single month — a fully operational content pipeline at scale</div></div>
+      <div class="ez-stat-card"><div class="ez-stat-n">3</div><div class="ez-stat-l">Live webinars launched from scratch with full email promotion sequences</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <p class="cta-band-text"><strong>Sound familiar?</strong> If your marketing keeps getting pushed down the priority list, let's talk.</p>
+  <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a>
+</div>
+
+<!-- CASE STUDIES -->
+<div id="cases" class="section-wrap deep">
+  <div class="section-inner">
+    <div class="eyebrow">More Work</div>
+    <h2 class="section-heading">A few more examples of what getting<br>the marketing right actually looks like.</h2>
+    <div class="cases-grid">
+
+      <!-- MONAL -->
+      <div class="case-card fade-in">
+        <div class="case-header">
+          <div class="case-services"><span class="case-service-tag">Content</span><span class="case-service-tag">Video</span><span class="case-service-tag">Social Media</span></div>
+          <div class="case-title">Monal Restaurant</div>
+          <div class="case-desc">A fine dining restaurant in London. I built a video-first content system, produced short-form content consistently, and ran paid campaigns to grow reach.</div>
+        </div>
+        <div class="monal-thumbs">
+          <div class="monal-thumb"><img src="images/monal_133k.jpg" alt="TikTok 133.9K views"><div class="monal-thumb-overlay"><div class="monal-thumb-count">133.9K</div><div class="monal-thumb-platform">TikTok</div></div></div>
+          <div class="monal-thumb"><img src="images/monal_127k.jpg" alt="Instagram 127K views"><div class="monal-thumb-overlay"><div class="monal-thumb-count">127K</div><div class="monal-thumb-platform">Instagram</div></div></div>
+        </div>
+        <div class="case-metrics cols-2" style="margin-top:0;">
+          <div class="metric"><div class="metric-n">195K+</div><div class="metric-l">Total video views</div></div>
+          <div class="metric"><div class="metric-n">68K</div><div class="metric-l">Single reel organic</div></div>
+        </div>
+        <div class="monal-links">
+          <a href="https://vm.tiktok.com/ZNRHFDHRP/" target="_blank" class="monal-link">&#8599; TikTok (133.9K)</a>
+          <a href="https://www.instagram.com/reel/DKhGh5-N4PD/" target="_blank" class="monal-link">&#8599; Instagram (127K)</a>
+        </div>
+      </div>
+
+      <!-- CAROLINA -->
+      <div class="case-card fade-in" style="transition-delay:0.1s;">
+        <div class="case-header">
+          <div class="case-services"><span class="case-service-tag">SEO</span><span class="case-service-tag">Paid Ads</span><span class="case-service-tag">Email</span></div>
+          <div class="case-title">Carolina Land Experts</div>
+          <div class="case-desc">A real estate company that needed more than just ads. I ran Google Ads, built SEO foundations, and managed email marketing to create a joined-up acquisition system.</div>
+        </div>
+        <div class="case-metrics cols-3">
+          <div class="metric"><div class="metric-n">50</div><div class="metric-l">Google Ads conversions</div></div>
+          <div class="metric"><div class="metric-n">$3.99</div><div class="metric-l">Cost per click</div></div>
+          <div class="metric"><div class="metric-n">45K+</div><div class="metric-l">Facebook reach</div></div>
+        </div>
+        <div class="case-proof-toggle">
+          <button class="proof-btn" onclick="toggleProof(this)">View proof <span class="proof-arrow">&#9662;</span></button>
+          <div class="proof-img-wrap">
+            <div class="proof-tabs">
+              <button class="proof-tab active" onclick="switchTab(this,'carolina-ads')">Paid Ads</button>
+              <button class="proof-tab" onclick="switchTab(this,'carolina-seo')">SEO Traffic</button>
+              <button class="proof-tab" onclick="switchTab(this,'carolina-kw')">Rankings</button>
+            </div>
+            <div id="carolina-ads" class="proof-tab-panel active"><img src="images/carolina_ads.png" alt="Google Ads dashboard"></div>
+            <div id="carolina-seo" class="proof-tab-panel"><img src="images/carolina_gsc.png" alt="Google Search Console traffic"></div>
+            <div id="carolina-kw" class="proof-tab-panel"><img src="images/carolina_kw.png" alt="Ranked Keywords — Top 5 positions"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GDPR EU -->
+      <div class="case-card fade-in" style="transition-delay:0.2s;">
+        <div class="case-header">
+          <div class="case-services"><span class="case-service-tag">SEO</span><span class="case-service-tag">Content Strategy</span></div>
+          <div class="case-title">GDPR EU</div>
+          <div class="case-desc">A legal compliance platform competing against established law firms for search visibility. I built the content and SEO strategy to grow their organic presence.</div>
+        </div>
+        <div class="case-metrics cols-2">
+          <div class="metric"><div class="metric-n">1.9M</div><div class="metric-l">Organic impressions</div></div>
+          <div class="metric"><div class="metric-n">13.2K</div><div class="metric-l">Total clicks</div></div>
+        </div>
+        <div class="case-proof-toggle">
+          <button class="proof-btn" onclick="toggleProof(this)">View proof <span class="proof-arrow">&#9662;</span></button>
+          <div class="proof-img-wrap">
+            <div class="proof-tabs">
+              <button class="proof-tab active" onclick="switchTab(this,'gdpr-kw')">Rankings</button>
+              <button class="proof-tab" onclick="switchTab(this,'gdpr-traffic')">Traffic</button>
+            </div>
+            <div id="gdpr-kw" class="proof-tab-panel active"><img src="images/gdpr_kw.png" alt="GDPR EU keyword rankings"></div>
+            <div id="gdpr-traffic" class="proof-tab-panel"><img src="images/gdpr_gsc.png" alt="GDPR EU Search Console traffic"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AHI CLINIC -->
+      <div class="case-card fade-in" style="transition-delay:0.1s;">
+        <div class="case-header">
+          <div class="case-services"><span class="case-service-tag">Paid Ads</span><span class="case-service-tag">Social Media</span><span class="case-service-tag">Content</span></div>
+          <div class="case-title">AHI Clinic</div>
+          <div class="case-desc">An aesthetic medicine clinic in Canary Wharf, London. I ran paid campaigns and produced video content to drive qualified leads in a competitive advertising market.</div>
+        </div>
+        <div class="case-metrics cols-3">
+          <div class="metric"><div class="metric-n">38</div><div class="metric-l">Qualified leads</div></div>
+          <div class="metric"><div class="metric-n">&pound;52</div><div class="metric-l">Cost per lead</div></div>
+          <div class="metric"><div class="metric-n">&pound;2K</div><div class="metric-l">Ad budget</div></div>
+        </div>
+        <div class="case-proof-toggle">
+          <button class="proof-btn" onclick="toggleProof(this)">View proof <span class="proof-arrow">&#9662;</span></button>
+          <div class="proof-img-wrap"><img src="images/ahi_redacted.png" alt="AHI Clinic CRM — 38 leads (names redacted)"></div>
+        </div>
+      </div>
+
+      <!-- HOSTSAILOR -->
+      <div class="case-card fade-in" style="transition-delay:0.2s;">
+        <div class="case-header">
+          <div class="case-services"><span class="case-service-tag">SEO</span><span class="case-service-tag">Content</span></div>
+          <div class="case-title">HostSailor</div>
+          <div class="case-desc">A multinational web hosting provider. I audited 460 blog posts, built a full content cluster architecture across 6 product categories, and managed ongoing content production.</div>
+        </div>
+        <div class="case-metrics cols-3">
+          <div class="metric"><div class="metric-n">460</div><div class="metric-l">Posts audited</div></div>
+          <div class="metric"><div class="metric-n">15/mo</div><div class="metric-l">New blogs</div></div>
+          <div class="metric"><div class="metric-n">6+</div><div class="metric-l">Backlinks/month</div></div>
+        </div>
+        <div class="case-proof-toggle">
+          <button class="proof-btn" onclick="toggleProof(this)">View proof <span class="proof-arrow">&#9662;</span></button>
+          <div class="proof-img-wrap"><img src="images/hostsailor.png" alt="HostSailor content cluster audit (internal data redacted)"></div>
+        </div>
+      </div>
+
+      <!-- FUSION HUT -->
+      <div class="case-card fade-in" style="transition-delay:0.3s;">
+        <div class="case-header">
+          <div class="case-services"><span class="case-service-tag">SEO</span><span class="case-service-tag">Content Strategy</span></div>
+          <div class="case-title">Fusion Hut</div>
+          <div class="case-desc">An Indian restaurant in Cambridge with no SEO presence. I built the keyword strategy from scratch, structured the content architecture, and managed ongoing optimisation.</div>
+        </div>
+        <div class="case-metrics cols-2">
+          <div class="metric"><div class="metric-n">1.73K</div><div class="metric-l">Clicks in 6 months</div></div>
+          <div class="metric"><div class="metric-n">69.5K</div><div class="metric-l">Impressions</div></div>
+        </div>
+        <div class="case-proof-toggle">
+          <button class="proof-btn" onclick="toggleProof(this)">View proof <span class="proof-arrow">&#9662;</span></button>
+          <div class="proof-img-wrap"><img src="images/fusion_gsc.png" alt="Fusion Hut GSC performance"></div>
+        </div>
+      </div>
+
+    </div>
+    <div style="display:flex;justify-content:center;">
+      <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIAL -->
+<div class="section-wrap">
+  <div class="section-inner">
+    <div class="eyebrow">What clients say</div>
+    <h2 class="section-heading" style="margin-bottom:2.5rem;">Straight from the people I have worked with.</h2>
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+      <p class="testimonial-quote">"I am confident in Tanveer's ability to produce relevant content and steer a business through good marketing."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">MW</div>
+        <div><div class="testimonial-name">Michael Walliser</div><div class="testimonial-role">CEO, EasyDigz</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section-wrap deep">
+  <div class="section-inner">
+    <div class="eyebrow">FAQ</div>
+    <h2 class="section-heading" style="margin-bottom:2.5rem;">Questions founders usually ask.</h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What does fractional mean exactly?<span class="faq-icon">+</span></button><div class="faq-a">Fractional means you get a senior marketing partner working inside your business without hiring a full-time employee. You get the same strategic thinking and execution ownership, at a fraction of the cost and commitment. Most founders I work with do not need someone 40 hours a week. They need someone who knows what they are doing, owns it completely, and delivers results.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How is this different from hiring a marketing agency?<span class="faq-icon">+</span></button><div class="faq-a">With an agency, you are one of many clients. Work gets passed to junior staff, communication goes through account managers, and you rarely speak to the person actually doing the work. With me, you deal directly with one person who is fully invested in your business. No handoffs, no account managers, no one learning your business on your budget.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What does the engagement actually look like day to day?<span class="faq-icon">+</span></button><div class="faq-a">We start with a two-week audit and strategy phase. From there I build the systems and infrastructure, then move into ongoing execution. You get regular updates and full visibility into what is happening. I stay in close contact and move fast. You do not need to manage me — that is the point.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How quickly can you get started?<span class="faq-icon">+</span></button><div class="faq-a">Typically within one to two weeks of the initial call, depending on your timeline. I take a limited number of clients at any one time so I can give each one proper attention. If you are ready to move, the best first step is booking a discovery call so we can talk through what you need.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you work with early stage startups or more established businesses?<span class="faq-icon">+</span></button><div class="faq-a">Both, but the fit is usually best with businesses that have product-market fit and are ready to grow. If you have a product that works and marketing is the thing holding you back, that is where I do my best work.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What industries do you work in?<span class="faq-icon">+</span></button><div class="faq-a">I have worked across SaaS, real estate, healthcare, hospitality and legal. The industries change but the fundamentals do not. I pick things up fast and I do not need hand-holding to get up to speed.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much does it cost?<span class="faq-icon">+</span></button><div class="faq-a">Every engagement is scoped based on what your business actually needs — there are no fixed packages. The best way to get a sense of what makes sense for your situation is to book a discovery call. No obligation, no pressure.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="section-wrap">
+  <div class="about-inner">
+    <div class="eyebrow">About me</div>
+    <h2 class="section-heading" style="margin-bottom:2rem;">The person behind the work.</h2>
+    <p class="about-body fade-in">I am a fractional marketing partner working with founder-led businesses who need marketing to actually move.</p>
+    <p class="about-body fade-in">I have spent the last three years embedded across industries — SaaS, real estate, healthcare, hospitality — and the one thing that does not change is what founders need. A clear strategy, a system that runs, and someone who treats the business like their own.</p>
+    <p class="about-body fade-in">I do not show up with a template and a report. I start by understanding what you are building, where the gaps are, and what will actually make a difference at your stage. Then I build it and run it.</p>
+    <p class="about-body fade-in">I work remotely with clients across the UK, US and beyond.</p>
+    <p class="about-body fade-in" style="margin-bottom:2.4rem;">If that sounds like what you have been looking for, let's talk.</p>
+    <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary fade-in">Book a Discovery Call</a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section-wrap deep">
+  <div class="contact-inner">
+    <div class="eyebrow" style="justify-content:center;">Get in touch</div>
+    <h2 class="contact-heading">Let's talk.</h2>
+    <p class="contact-sub">If you are thinking about getting your marketing sorted, the best place to start is a conversation. Book a 30-minute discovery call and we can talk through where you are, what you need, and whether I am the right fit. No pitch. No pressure. Just an honest conversation.</p>
+    <div class="contact-btns">
+      <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a>
+      <a href="https://wa.me/447956044519" target="_blank" class="btn-whatsapp">
+        <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Me
+      </a>
+    </div>
+    <p class="contact-note">Or email at <a href="mailto:tanveernadeemwork@gmail.com">tanveernadeemwork@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Tanveer<span>.</span></div>
+  <div class="footer-links"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/tanveer-n-94129025a/" target="_blank" class="social-btn">in</a>
+    <a href="https://wa.me/447956044519" target="_blank" class="social-btn">W</a>
+    <a href="mailto:tanveernadeemwork@gmail.com" class="social-btn">@</a>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold:0.08, rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+window.addEventListener('scroll', () => {
+  document.querySelector('nav').style.borderBottomColor = window.scrollY > 50 ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0.07)';
+});
+
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+document.addEventListener('click', (e) => {
+  const menu = document.getElementById('mobileMenu');
+  const toggle = document.querySelector('.nav-toggle');
+  if(!menu.contains(e.target) && !toggle.contains(e.target)) menu.classList.remove('open');
+});
+
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if(!isOpen) item.classList.add('open');
+}
+
+function toggleProof(btn) {
+  const wrap = btn.nextElementSibling;
+  const isOpen = wrap.classList.contains('open');
+  wrap.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+  btn.childNodes[0].textContent = !isOpen ? 'Hide proof ' : 'View proof ';
+}
+
+function switchTab(btn, panelId) {
+  const wrap = btn.closest('.proof-img-wrap');
+  wrap.querySelectorAll('.proof-tab').forEach(t => t.classList.remove('active'));
+  wrap.querySelectorAll('.proof-tab-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(panelId).classList.add('active');
+}
+</script>
+</body>
+</html>
