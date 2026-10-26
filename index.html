@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tanveer Nadeem — Fractional Marketing Partner</title>
+<title>Tanveer Nadeem | Marketing Strategy &amp; Fractional Marketing Lead</title>
+<meta name="description" content="Marketing strategy and fractional marketing leadership for B2B SaaS and founder-led businesses. SEO, CRO, analytics, demand generation and growth systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
 <style>
@@ -296,6 +297,38 @@ footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align
   .faq-q{padding:16px;}
   .faq-a{padding:0 16px 16px;}
 }
+
+/* ── COPY UPDATE ADDITIONS ─────────────────────── */
+.hero-sub{max-width:540px;}
+.hero-sub p{margin-bottom:1rem;}
+.hero-sub p.hero-strong{color:var(--white);font-weight:700;margin-bottom:0;}
+.hero-photo-card{max-width:340px;border-radius:18px;line-height:1.5;}
+.stats-head{max-width:1200px;margin:0 auto;padding:70px 6% 0;}
+.stats-head .section-sub{margin-bottom:2rem;max-width:640px;}
+.prose{max-width:720px;}
+.prose p{font-size:1.02rem;line-height:1.85;color:var(--text-mid);margin-bottom:1.3rem;}
+.prose p.prose-callout{color:var(--white);font-weight:700;font-size:1.12rem;border-left:3px solid var(--yellow);padding-left:20px;}
+.how-desc p+p{margin-top:0.8rem;}
+.service-sub{font-size:0.9rem;font-weight:700;color:var(--yellow);margin-bottom:0.9rem;line-height:1.5;}
+.service-list-label{font-size:0.62rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin:1.2rem 0 0.6rem;}
+.service-list{list-style:none;display:grid;gap:6px;margin-bottom:1.2rem;}
+.service-list li{font-size:0.84rem;line-height:1.6;color:var(--text-mid);padding-left:18px;position:relative;}
+.service-list li::before{content:'';position:absolute;left:0;top:0.62em;width:6px;height:6px;border-radius:50%;background:var(--blue);}
+.service-best{font-size:0.84rem;line-height:1.7;color:var(--text);padding-top:1rem;border-top:1px solid var(--border-mid);}
+.service-best strong{color:var(--white);}
+.ez-sub{font-size:1.02rem;font-weight:800;color:var(--white);letter-spacing:-0.02em;margin:1.8rem 0 0.8rem;}
+.ez-led{display:grid;gap:1rem;margin-bottom:1.3rem;}
+.ez-led-title{font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:2px;}
+.ez-led p{font-size:0.9rem;line-height:1.75;color:var(--text-mid);}
+.ez-outputs-title{font-size:0.62rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.9rem;}
+.ez-outputs{list-style:none;display:grid;gap:8px;}
+.ez-outputs li{font-size:0.82rem;line-height:1.55;color:var(--text-mid);padding-left:18px;position:relative;}
+.ez-outputs li::before{content:'';position:absolute;left:0;top:0.55em;width:6px;height:6px;border-radius:50%;background:var(--yellow);}
+.case-period{font-size:0.7rem;font-weight:700;color:var(--text-muted);letter-spacing:0.06em;margin-bottom:8px;}
+.contact-inner{max-width:720px;}
+.contact-heading{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.15;}
+.contact-sub p+p{margin-top:0.8rem;}
+@media(max-width:767px){.stats-head{padding:56px 5% 0;}}
 </style>
 </head>
 <body>
@@ -309,14 +342,15 @@ footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align
 <nav>
   <div class="logo">Tanveer<span>.</span></div>
   <div class="nav-links">
-    <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a href="#how">How I Work</a><a href="#services">Services</a><a href="#work">Selected Work</a><a href="#about">About</a><a href="#contact">Contact</a>
   </div>
   <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
   <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="nav-cta">Book a Call</a>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#work" onclick="closeMenu()">Work</a>
+  <a href="#how" onclick="closeMenu()">How I Work</a>
   <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#work" onclick="closeMenu()">Selected Work</a>
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
   <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary" style="text-align:center;">Book a Discovery Call</a>
@@ -327,88 +361,181 @@ footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align
   <div class="hero-inner">
     <div class="hero-content fade-in">
       <div class="hero-badge"><div class="badge-dot"></div>Fractional Marketing Partner</div>
-      <div class="hero-eyebrow">Founder-Led Businesses</div>
+      <div class="hero-eyebrow">Marketing Strategy &amp; Growth Consultant</div>
       <h1>Your product is ready. Your marketing needs to <em>catch up.</em></h1>
-      <p class="hero-sub">I work with founders who are scaling but don't have the time, team, or system to make marketing actually work. I come in, figure out what needs to happen, build the infrastructure, and run it. You stay focused on the product. I own the marketing.</p>
+      <div class="hero-sub">
+        <p>You've built a business worth growing. But marketing needs more than occasional campaigns, disconnected activities or another freelancer waiting for instructions.</p>
+        <p>I help B2B SaaS and founder-led businesses turn scattered marketing efforts into a clear strategy, connected systems and consistent execution.</p>
+        <p>From positioning and customer acquisition to website optimisation, analytics and marketing operations, I take ownership of the bigger picture and make sure the right work gets done.</p>
+        <p class="hero-strong">You focus on the business. I lead the marketing.</p>
+      </div>
       <div class="btn-wrap">
         <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a>
-        <a href="#work" class="btn-secondary">See My Work</a>
+        <a href="#work" class="btn-secondary">Explore My Work</a>
       </div>
     </div>
     <div class="hero-photo-wrap fade-in" style="transition-delay:0.15s;">
       <div class="hero-photo-circle">
         <img src="images/tanveer.jpg" alt="Tanveer Nadeem">
       </div>
-      <div class="hero-photo-card">Currently embedded with <strong>EasyDigz</strong></div>
+      <div class="hero-photo-card">Currently leading marketing strategy for&nbsp;<strong>EasyDigz</strong>, a US-based PropTech SaaS company.</div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
+<!-- CREDIBILITY -->
 <div id="stats">
+  <div class="stats-head fade-in">
+    <div class="eyebrow">Selected Experience</div>
+    <h2 class="section-heading">Strategy backed by hands-on experience.</h2>
+    <p class="section-sub">My work spans marketing leadership, acquisition, website optimisation, analytics and content systems across SaaS and other founder-led businesses.</p>
+  </div>
   <div class="stats-inner">
-    <div class="stat fade-in"><div class="stat-n">10,000+</div><div class="stat-l">Email list grown and managed for a PropTech SaaS company</div></div>
-    <div class="stat fade-in" style="transition-delay:0.1s;"><div class="stat-n">7x ROAS</div><div class="stat-l">Return on ad spend delivered for a furniture e-commerce brand</div></div>
-    <div class="stat fade-in" style="transition-delay:0.2s;"><div class="stat-n">First page</div><div class="stat-l">Google rankings achieved in competitive real estate and legal niches</div></div>
-    <div class="stat fade-in" style="transition-delay:0.3s;"><div class="stat-n">1.9M+</div><div class="stat-l">Organic impressions generated for a legal compliance platform</div></div>
+    <div class="stat fade-in"><div class="stat-n">100+</div><div class="stat-l">Videos created for EasyDigz's educational and promotional marketing programmes</div></div>
+    <div class="stat fade-in" style="transition-delay:0.1s;"><div class="stat-n">15+</div><div class="stat-l">Webinars delivered as part of an ongoing audience engagement programme</div></div>
+    <div class="stat fade-in" style="transition-delay:0.2s;"><div class="stat-n">10,000+</div><div class="stat-l">Reported real estate agent email list managed for a PropTech SaaS business</div></div>
+    <div class="stat fade-in" style="transition-delay:0.3s;"><div class="stat-n">7x ROAS</div><div class="stat-l">Reported advertising performance for an e-commerce campaign</div></div>
+  </div>
+</div>
+
+<!-- THE PROBLEM I SOLVE -->
+<div class="section-wrap">
+  <div class="section-inner">
+    <div class="eyebrow">Why Work With Me</div>
+    <h2 class="section-heading" style="margin-bottom:2rem;">Marketing shouldn't be another thing you have to manage.</h2>
+    <div class="prose fade-in">
+      <p>Your business is growing, but marketing is becoming harder to coordinate.</p>
+      <p>The website needs improvements. Campaigns need direction. Content gets published without a clear purpose. Leads come in, but the follow-up process isn't always connected.</p>
+      <p>You know these things matter, but you don't have the time to manage every moving part.</p>
+      <p class="prose-callout">What you need isn't necessarily more marketing activity. You need someone who knows what to prioritise and takes responsibility for making it happen.</p>
+      <p>I work alongside founders to understand the business, identify opportunities and build a marketing function that operates with direction.</p>
+      <p>That means developing the strategy, improving the systems, coordinating execution and staying close enough to the work to make meaningful improvements.</p>
+    </div>
   </div>
 </div>
 
 <!-- HOW I WORK -->
-<div class="section-wrap">
+<div id="how" class="section-wrap deep">
   <div class="section-inner">
-    <div class="eyebrow">How it works</div>
-    <h2 class="section-heading">No guesswork. No long onboarding.<br>No waiting three months to see results.</h2>
-    <p class="section-sub">Here is exactly how I work.</p>
+    <div class="eyebrow">My Approach</div>
+    <h2 class="section-heading" style="margin-bottom:3rem;">Understand the business. Build the system. Lead the work.</h2>
     <div class="how-grid">
-      <div class="how-card fade-in"><div class="how-num">01</div><div class="how-title">Audit and Strategy</div><div class="how-desc">Before anything gets executed, I spend two weeks understanding your business. Where you are, where you want to get to, what is working and what is not. You get a clear strategy and a roadmap before a single campaign goes live.</div></div>
-      <div class="how-card fade-in" style="transition-delay:0.1s;"><div class="how-num">02</div><div class="how-title">Build the System</div><div class="how-desc">Once we know the direction, I build the infrastructure. Content pipelines, campaign structures, workflows, email sequences. Everything set up to run efficiently without you being pulled into every decision.</div></div>
-      <div class="how-card fade-in" style="transition-delay:0.2s;"><div class="how-num">03</div><div class="how-title">Run and Grow</div><div class="how-desc">Then I run it. Campaigns, content, reporting, optimisation. You get full visibility into what is happening and why, without it landing on your plate. I stay close, move fast and treat your business like it is my own.</div></div>
+      <div class="how-card fade-in"><div class="how-num">01</div><div class="how-title">Find the Real Opportunities</div><div class="how-desc"><p>I assess your positioning, audience, website, acquisition channels, customer journey and existing marketing processes.</p><p>The objective is to understand where marketing is falling short and which improvements are likely to make the greatest difference.</p></div></div>
+      <div class="how-card fade-in" style="transition-delay:0.1s;"><div class="how-num">02</div><div class="how-title">Create the Strategy and Infrastructure</div><div class="how-desc"><p>I develop a practical marketing roadmap based on your business priorities.</p><p>That might involve improving messaging, strengthening website conversion paths, setting up tracking, developing content programmes or creating better lead-nurturing workflows.</p><p>Everything should work towards a shared objective rather than operate as disconnected activities.</p></div></div>
+      <div class="how-card fade-in" style="transition-delay:0.2s;"><div class="how-num">03</div><div class="how-title">Execute, Measure and Improve</div><div class="how-desc"><p>I take responsibility for moving the work forward.</p><p>Depending on the engagement, I implement directly, collaborate with your existing team or coordinate specialist support.</p><p>I review performance, adjust priorities and make sure marketing continues to evolve with the business.</p></div></div>
     </div>
-    <div style="display:flex;justify-content:center;"><a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a></div>
+    <div style="display:flex;justify-content:center;"><a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Let's Discuss Your Marketing</a></div>
   </div>
 </div>
 
 <!-- SERVICES -->
-<div id="services" class="section-wrap deep">
+<div id="services" class="section-wrap">
   <div class="section-inner">
-    <div class="eyebrow">What I do</div>
-    <h2 class="section-heading">Everything your marketing needs.<br>One person who owns it.</h2>
-    <p class="section-sub">I don't offer packages. Every engagement starts with understanding what your business actually needs. But here is what I bring to the table.</p>
-    <div class="tags-label">Skills and capabilities</div>
-    <div class="tags">
-      <div class="tag">Marketing Strategy</div><div class="tag">Paid Ads</div><div class="tag">SEO</div>
-      <div class="tag">Content Marketing</div><div class="tag">Video Marketing</div><div class="tag">Email Marketing</div>
-      <div class="tag">Social Media</div><div class="tag">Webinars</div><div class="tag">Demand Generation</div>
-      <div class="tag">Campaign Management</div><div class="tag">Content Pipelines</div><div class="tag">Marketing Workflows</div>
-    </div>
+    <div class="eyebrow">How I Can Help</div>
+    <h2 class="section-heading" style="margin-bottom:3rem;">One marketing partner.<br>The expertise to connect the dots.</h2>
     <div class="services-grid">
-      <div class="service-card fade-in"><div class="service-num">01</div><div class="service-title">Marketing Strategy and Roadmap</div><div class="service-desc">Before anything gets executed, I audit where you are, identify the gaps, and map out a strategy that makes sense for your stage and goals. You get clarity before you spend a penny.</div></div>
-      <div class="service-card fade-in" style="transition-delay:0.1s;"><div class="service-num">02</div><div class="service-title">Content and Campaign Execution</div><div class="service-desc">I build content pipelines, run campaigns, manage email sequences and webinars. Everything moving consistently, without you chasing anyone to get it done.</div></div>
-      <div class="service-card fade-in" style="transition-delay:0.1s;"><div class="service-num">03</div><div class="service-title">Paid Media Management</div><div class="service-desc">When you are ready to put budget behind growth, I plan and manage paid campaigns across Google and Meta. Every pound and dollar tracked and tied back to real outcomes.</div></div>
-      <div class="service-card fade-in" style="transition-delay:0.2s;"><div class="service-num">04</div><div class="service-title">SEO and Content Foundations</div><div class="service-desc">Long term visibility does not happen by accident. I build the SEO and content foundations that bring the right people to you consistently, without depending entirely on paid spend.</div></div>
+      <div class="service-card fade-in">
+        <div class="service-num">01</div>
+        <div class="service-title">Fractional Marketing Leadership</div>
+        <div class="service-sub">Senior marketing direction without a full-time hire.</div>
+        <div class="service-desc">I help founders establish clear marketing priorities, develop growth strategies and lead execution across channels and teams.</div>
+        <div class="service-list-label">Areas of support</div>
+        <ul class="service-list">
+          <li>Marketing strategy and growth roadmaps</li>
+          <li>Positioning and go-to-market planning</li>
+          <li>Campaign prioritisation and resource allocation</li>
+          <li>Marketing budgets and performance reviews</li>
+          <li>Team and specialist coordination</li>
+          <li>Sales and marketing alignment</li>
+        </ul>
+        <div class="service-best"><strong>Best for:</strong> Businesses that need someone to own marketing strategy and coordinate ongoing execution.</div>
+      </div>
+      <div class="service-card fade-in" style="transition-delay:0.1s;">
+        <div class="service-num">02</div>
+        <div class="service-title">Website Optimisation, CRO &amp; Analytics</div>
+        <div class="service-sub">Turn your website into a more effective part of your customer acquisition process.</div>
+        <div class="service-desc">I combine conversion-focused thinking with hands-on technical marketing experience to improve how visitors interact with your website and how performance is measured.</div>
+        <div class="service-list-label">Areas of support</div>
+        <ul class="service-list">
+          <li>Website and landing-page audits</li>
+          <li>Messaging, content and user-journey improvements</li>
+          <li>Conversion rate optimisation</li>
+          <li>GA4 and Google Tag Manager</li>
+          <li>Event and conversion tracking</li>
+          <li>Funnel analysis and lead capture</li>
+          <li>Reporting and measurement frameworks</li>
+        </ul>
+        <div class="service-best"><strong>Best for:</strong> Businesses attracting visitors but struggling with conversions, tracking or customer journeys.</div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-num">03</div>
+        <div class="service-title">SEO, Content &amp; Organic Growth</div>
+        <div class="service-sub">Build visibility around the problems your customers are searching for.</div>
+        <div class="service-desc">I develop SEO and content strategies that connect audience needs with commercial priorities.</div>
+        <div class="service-list-label">Areas of support</div>
+        <ul class="service-list">
+          <li>SEO audits and keyword strategy</li>
+          <li>Technical and on-page SEO recommendations</li>
+          <li>Content architecture and topic clusters</li>
+          <li>Editorial planning and content workflows</li>
+          <li>Search performance analysis</li>
+          <li>AEO and GEO strategy</li>
+          <li>Coordination of specialist SEO implementation</li>
+        </ul>
+        <div class="service-best"><strong>Best for:</strong> Businesses looking to build sustainable search visibility and a more structured content programme.</div>
+      </div>
+      <div class="service-card fade-in" style="transition-delay:0.1s;">
+        <div class="service-num">04</div>
+        <div class="service-title">Demand Generation &amp; Marketing Systems</div>
+        <div class="service-sub">Create campaigns and processes that work together, not in isolation.</div>
+        <div class="service-desc">I help plan, coordinate and improve acquisition and engagement programmes across relevant channels.</div>
+        <div class="service-list-label">Areas of support</div>
+        <ul class="service-list">
+          <li>Demand generation and campaign strategy</li>
+          <li>Paid media planning and oversight</li>
+          <li>Email marketing and lead nurturing</li>
+          <li>Marketing automation</li>
+          <li>Webinars, podcasts and video-led campaigns</li>
+          <li>Content distribution and repurposing</li>
+          <li>Campaign tracking and optimisation</li>
+        </ul>
+        <div class="service-best"><strong>Best for:</strong> Businesses that need more consistent acquisition, engagement and follow-up processes.</div>
+      </div>
     </div>
-    <div style="display:flex;justify-content:center;"><a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a></div>
+    <div style="display:flex;justify-content:center;"><a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Discuss Your Marketing Needs</a></div>
   </div>
 </div>
 
-<!-- EASYDIGZ -->
-<div id="work" class="section-wrap">
+<!-- FEATURED WORK: EASYDIGZ -->
+<div id="work" class="section-wrap deep">
   <div class="easydigz-inner">
     <div class="fade-in">
-      <div class="eyebrow">Featured Work</div>
-      <div class="easydigz-client-tag">EasyDigz &middot; PropTech SaaS &middot; Triangle, NC &middot; Ongoing</div>
-      <h2 class="easydigz-heading">They had a product that worked. Marketing was starting from zero.</h2>
-      <p class="easydigz-body">When EasyDigz brought me in, there was nothing to inherit. No content pipeline, no email campaigns, no video, no webinar program. The brand had no presence and the product — a white-label real estate platform for agents and brokers — needed real education to land with the right audience.</p>
-      <p class="easydigz-body">I started with a two-week audit, then built the entire marketing system around one core workflow. Plan the content, promote it through a multi-touch email sequence, run it live, record it, cut it into short-form clips, distribute across channels, and repeat. That one workflow powered everything simultaneously without adding workload.</p>
-      <p class="easydigz-body">Today EasyDigz has a 10,000 plus agent email list, 40 plus videos published, a fully operational content engine, and paid campaigns running on LinkedIn. I am still embedded with them and the scope keeps growing.</p>
-      <div class="easydigz-tags">
-        <span class="easydigz-tag">10,000+ agent email list</span><span class="easydigz-tag">40+ videos published</span>
-        <span class="easydigz-tag">3 live webinars</span><span class="easydigz-tag">30-day content series</span>
-        <span class="easydigz-tag">Expo presentations</span><span class="easydigz-tag">Ongoing and growing</span>
+      <div class="eyebrow">Featured Client Work</div>
+      <div class="easydigz-client-tag">EasyDigz &middot; PropTech SaaS &middot; United States &middot; Ongoing</div>
+      <h2 class="easydigz-heading">Building a connected marketing function for a growing SaaS business.</h2>
+      <p class="easydigz-body">EasyDigz provides a white-label real estate platform for agents and brokers.</p>
+      <p class="easydigz-body">My role has been to lead the marketing strategy and establish the systems, campaigns and processes needed to support awareness, audience education and customer acquisition.</p>
+
+      <h3 class="ez-sub">The Challenge</h3>
+      <p class="easydigz-body">The business needed clearer positioning, a more structured marketing approach and stronger foundations for ongoing acquisition.</p>
+      <p class="easydigz-body">Early messaging and paid awareness experiments also highlighted opportunities to improve website journeys, tracking and lead follow-up before increasing advertising investment.</p>
+
+      <h3 class="ez-sub">What I Led</h3>
+      <div class="ez-led">
+        <div><div class="ez-led-title">Marketing strategy and direction</div><p>Developed marketing priorities, messaging frameworks, campaign plans and ongoing marketing approaches aligned with business goals.</p></div>
+        <div><div class="ez-led-title">Website optimisation and technical marketing</div><p>Worked directly on website and landing-page improvements, GA4, Google Tag Manager, custom-event tracking and conversion journeys.</p></div>
+        <div><div class="ez-led-title">Recurring webinar and podcast programmes</div><p>Helped establish webinars and podcasts as regular marketing activities supported by promotional videos, email campaigns and social distribution.</p></div>
+        <div><div class="ez-led-title">Content and audience engagement</div><p>Developed and coordinated educational content, newsletters, video campaigns and ongoing content workflows.</p></div>
+        <div><div class="ez-led-title">Marketing systems and lead nurturing</div><p>Planned email sequences, follow-up frameworks and marketing processes to better connect audience engagement with acquisition activity.</p></div>
+        <div><div class="ez-led-title">Cross-functional coordination</div><p>Collaborated with founders, developers, PR, sales-related teams and external specialists to align marketing execution with business priorities.</p></div>
       </div>
-      <div class="btn-wrap">
-        <a href="#cases" class="btn-secondary">See All Work</a>
+
+      <h3 class="ez-sub">The Outcome</h3>
+      <p class="easydigz-body">The work has helped establish a more structured and repeatable approach to marketing, connecting content programmes, website improvements, tracking and acquisition planning.</p>
+      <p class="easydigz-body">The engagement continues, with ongoing priorities around customer acquisition, conversion journeys and marketing execution.</p>
+
+      <div class="btn-wrap" style="margin-top:1.8rem;">
+        <a href="#cases" class="btn-secondary">See More Work</a>
         <a href="https://www.linkedin.com/company/easydigz" target="_blank" class="ez-linkedin-btn">
           <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           View Live Work on LinkedIn
@@ -416,54 +543,36 @@ footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align
       </div>
     </div>
     <div class="easydigz-right fade-in" style="transition-delay:0.15s;">
-      <div class="ez-stat-card"><div class="ez-stat-n">10,000+</div><div class="ez-stat-l">Real estate agents on the email list, actively managed with multi-touch campaign sequences</div></div>
-      <div class="ez-stat-card"><div class="ez-stat-n">40+</div><div class="ez-stat-l">Marketing videos published across social and platform channels</div></div>
-      <div class="ez-stat-card"><div class="ez-stat-n">30</div><div class="ez-stat-l">Videos produced in a single month — a fully operational content pipeline at scale</div></div>
-      <div class="ez-stat-card"><div class="ez-stat-n">3</div><div class="ez-stat-l">Live webinars launched from scratch with full email promotion sequences</div></div>
+      <div class="ez-stat-card"><div class="ez-stat-n">100+</div><div class="ez-stat-l">Marketing videos created</div></div>
+      <div class="ez-stat-card"><div class="ez-stat-n">15+</div><div class="ez-stat-l">Webinars delivered</div></div>
+      <div class="ez-stat-card">
+        <div class="ez-outputs-title">Selected Outputs</div>
+        <ul class="ez-outputs">
+          <li>Recurring webinar and podcast promotional programmes</li>
+          <li>Website and landing-page improvements</li>
+          <li>GA4, GTM and custom-event tracking</li>
+          <li>Email marketing and nurturing frameworks</li>
+          <li>Multi-channel content planning and distribution</li>
+          <li>Ongoing marketing strategy and cross-functional coordination</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- CTA BAND -->
-<div class="cta-band">
-  <p class="cta-band-text"><strong>Sound familiar?</strong> If your marketing keeps getting pushed down the priority list, let's talk.</p>
-  <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a>
-</div>
-
-<!-- CASE STUDIES -->
-<div id="cases" class="section-wrap deep">
+<!-- SELECTED CLIENT WORK -->
+<div id="cases" class="section-wrap">
   <div class="section-inner">
-    <div class="eyebrow">More Work</div>
-    <h2 class="section-heading">A few more examples of what getting<br>the marketing right actually looks like.</h2>
+    <div class="eyebrow">Portfolio</div>
+    <h2 class="section-heading" style="margin-bottom:3rem;">Different challenges. Practical marketing solutions.</h2>
     <div class="cases-grid">
 
-      <!-- MONAL -->
+      <!-- CAROLINA -->
       <div class="case-card fade-in">
         <div class="case-header">
-          <div class="case-services"><span class="case-service-tag">Content</span><span class="case-service-tag">Video</span><span class="case-service-tag">Social Media</span></div>
-          <div class="case-title">Monal Restaurant</div>
-          <div class="case-desc">A fine dining restaurant in London. I built a video-first content system, produced short-form content consistently, and ran paid campaigns to grow reach.</div>
-        </div>
-        <div class="monal-thumbs">
-          <div class="monal-thumb"><img src="images/monal_133k.jpg" alt="TikTok 133.9K views"><div class="monal-thumb-overlay"><div class="monal-thumb-count">133.9K</div><div class="monal-thumb-platform">TikTok</div></div></div>
-          <div class="monal-thumb"><img src="images/monal_127k.jpg" alt="Instagram 127K views"><div class="monal-thumb-overlay"><div class="monal-thumb-count">127K</div><div class="monal-thumb-platform">Instagram</div></div></div>
-        </div>
-        <div class="case-metrics cols-2" style="margin-top:0;">
-          <div class="metric"><div class="metric-n">195K+</div><div class="metric-l">Total video views</div></div>
-          <div class="metric"><div class="metric-n">68K</div><div class="metric-l">Single reel organic</div></div>
-        </div>
-        <div class="monal-links">
-          <a href="https://vm.tiktok.com/ZNRHFDHRP/" target="_blank" class="monal-link">&#8599; TikTok (133.9K)</a>
-          <a href="https://www.instagram.com/reel/DKhGh5-N4PD/" target="_blank" class="monal-link">&#8599; Instagram (127K)</a>
-        </div>
-      </div>
-
-      <!-- CAROLINA -->
-      <div class="case-card fade-in" style="transition-delay:0.1s;">
-        <div class="case-header">
-          <div class="case-services"><span class="case-service-tag">SEO</span><span class="case-service-tag">Paid Ads</span><span class="case-service-tag">Email</span></div>
+          <div class="case-services"><span class="case-service-tag">Real Estate</span><span class="case-service-tag">SEO</span><span class="case-service-tag">Paid Advertising</span><span class="case-service-tag">Email Marketing</span></div>
           <div class="case-title">Carolina Land Experts</div>
-          <div class="case-desc">A real estate company that needed more than just ads. I ran Google Ads, built SEO foundations, and managed email marketing to create a joined-up acquisition system.</div>
+          <div class="case-desc">Supported customer acquisition through Google Ads, SEO and email marketing, connecting campaign activity with broader search and lead-generation objectives.</div>
         </div>
         <div class="case-metrics cols-3">
           <div class="metric"><div class="metric-n">50</div><div class="metric-l">Google Ads conversions</div></div>
@@ -480,17 +589,17 @@ footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align
             </div>
             <div id="carolina-ads" class="proof-tab-panel active"><img src="images/carolina_ads.png" alt="Google Ads dashboard"></div>
             <div id="carolina-seo" class="proof-tab-panel"><img src="images/carolina_gsc.png" alt="Google Search Console traffic"></div>
-            <div id="carolina-kw" class="proof-tab-panel"><img src="images/carolina_kw.png" alt="Ranked Keywords — Top 5 positions"></div>
+            <div id="carolina-kw" class="proof-tab-panel"><img src="images/carolina_kw.png" alt="Ranked Keywords, Top 5 positions"></div>
           </div>
         </div>
       </div>
 
       <!-- GDPR EU -->
-      <div class="case-card fade-in" style="transition-delay:0.2s;">
+      <div class="case-card fade-in" style="transition-delay:0.1s;">
         <div class="case-header">
-          <div class="case-services"><span class="case-service-tag">SEO</span><span class="case-service-tag">Content Strategy</span></div>
+          <div class="case-services"><span class="case-service-tag">Legal Compliance</span><span class="case-service-tag">SEO</span><span class="case-service-tag">Content Strategy</span></div>
           <div class="case-title">GDPR EU</div>
-          <div class="case-desc">A legal compliance platform competing against established law firms for search visibility. I built the content and SEO strategy to grow their organic presence.</div>
+          <div class="case-desc">Developed SEO and content strategy focused on search opportunities, content structure and organic visibility.</div>
         </div>
         <div class="case-metrics cols-2">
           <div class="metric"><div class="metric-n">1.9M</div><div class="metric-l">Organic impressions</div></div>
@@ -509,12 +618,33 @@ footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align
         </div>
       </div>
 
+      <!-- MONAL -->
+      <div class="case-card fade-in" style="transition-delay:0.2s;">
+        <div class="case-header">
+          <div class="case-services"><span class="case-service-tag">Hospitality</span><span class="case-service-tag">Video</span><span class="case-service-tag">Social Media Marketing</span></div>
+          <div class="case-title">Monal Restaurant</div>
+          <div class="case-desc">Developed and coordinated video-led content and social media campaigns to support audience engagement and restaurant promotion.</div>
+        </div>
+        <div class="monal-thumbs">
+          <div class="monal-thumb"><img src="images/monal_133k.jpg" alt="TikTok 133.9K views"><div class="monal-thumb-overlay"><div class="monal-thumb-count">133.9K</div><div class="monal-thumb-platform">TikTok</div></div></div>
+          <div class="monal-thumb"><img src="images/monal_127k.jpg" alt="Instagram 127K views"><div class="monal-thumb-overlay"><div class="monal-thumb-count">127K</div><div class="monal-thumb-platform">Instagram</div></div></div>
+        </div>
+        <div class="case-metrics cols-2" style="margin-top:0;">
+          <div class="metric"><div class="metric-n">195K+</div><div class="metric-l">Total video views</div></div>
+          <div class="metric"><div class="metric-n">68K</div><div class="metric-l">Single reel organic</div></div>
+        </div>
+        <div class="monal-links">
+          <a href="https://vm.tiktok.com/ZNRHFDHRP/" target="_blank" class="monal-link">&#8599; TikTok (133.9K)</a>
+          <a href="https://www.instagram.com/reel/DKhGh5-N4PD/" target="_blank" class="monal-link">&#8599; Instagram (127K)</a>
+        </div>
+      </div>
+
       <!-- AHI CLINIC -->
       <div class="case-card fade-in" style="transition-delay:0.1s;">
         <div class="case-header">
-          <div class="case-services"><span class="case-service-tag">Paid Ads</span><span class="case-service-tag">Social Media</span><span class="case-service-tag">Content</span></div>
+          <div class="case-services"><span class="case-service-tag">Aesthetic Medicine</span><span class="case-service-tag">Paid Advertising</span><span class="case-service-tag">Content</span></div>
           <div class="case-title">AHI Clinic</div>
-          <div class="case-desc">An aesthetic medicine clinic in Canary Wharf, London. I ran paid campaigns and produced video content to drive qualified leads in a competitive advertising market.</div>
+          <div class="case-desc">Worked on advertising and content marketing focused on audience engagement and lead generation for an aesthetic clinic.</div>
         </div>
         <div class="case-metrics cols-3">
           <div class="metric"><div class="metric-n">38</div><div class="metric-l">Qualified leads</div></div>
@@ -523,21 +653,21 @@ footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align
         </div>
         <div class="case-proof-toggle">
           <button class="proof-btn" onclick="toggleProof(this)">View proof <span class="proof-arrow">&#9662;</span></button>
-          <div class="proof-img-wrap"><img src="images/ahi_redacted.png" alt="AHI Clinic CRM — 38 leads (names redacted)"></div>
+          <div class="proof-img-wrap"><img src="images/ahi_redacted.png" alt="AHI Clinic CRM, 38 leads (names redacted)"></div>
         </div>
       </div>
 
       <!-- HOSTSAILOR -->
       <div class="case-card fade-in" style="transition-delay:0.2s;">
         <div class="case-header">
-          <div class="case-services"><span class="case-service-tag">SEO</span><span class="case-service-tag">Content</span></div>
+          <div class="case-services"><span class="case-service-tag">Web Hosting</span><span class="case-service-tag">SEO</span><span class="case-service-tag">Content Architecture</span></div>
+          <div class="case-period">November 2025 to April 2026</div>
           <div class="case-title">HostSailor</div>
-          <div class="case-desc">A multinational web hosting provider. I audited 460 blog posts, built a full content cluster architecture across 6 product categories, and managed ongoing content production.</div>
+          <div class="case-desc">Completed an SEO and content-focused engagement involving a large-scale content audit, topic-cluster development and structured content planning.</div>
+          <div class="case-desc" style="margin-top:8px;">The work included reviewing approximately 460 existing articles and identifying opportunities for improved search organisation and optimisation.</div>
         </div>
-        <div class="case-metrics cols-3">
-          <div class="metric"><div class="metric-n">460</div><div class="metric-l">Posts audited</div></div>
-          <div class="metric"><div class="metric-n">15/mo</div><div class="metric-l">New blogs</div></div>
-          <div class="metric"><div class="metric-n">6+</div><div class="metric-l">Backlinks/month</div></div>
+        <div class="case-metrics">
+          <div class="metric"><div class="metric-n">~460</div><div class="metric-l">Articles reviewed</div></div>
         </div>
         <div class="case-proof-toggle">
           <button class="proof-btn" onclick="toggleProof(this)">View proof <span class="proof-arrow">&#9662;</span></button>
@@ -548,9 +678,9 @@ footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align
       <!-- FUSION HUT -->
       <div class="case-card fade-in" style="transition-delay:0.3s;">
         <div class="case-header">
-          <div class="case-services"><span class="case-service-tag">SEO</span><span class="case-service-tag">Content Strategy</span></div>
+          <div class="case-services"><span class="case-service-tag">Hospitality</span><span class="case-service-tag">SEO</span><span class="case-service-tag">Content Strategy</span></div>
           <div class="case-title">Fusion Hut</div>
-          <div class="case-desc">An Indian restaurant in Cambridge with no SEO presence. I built the keyword strategy from scratch, structured the content architecture, and managed ongoing optimisation.</div>
+          <div class="case-desc">Developed keyword strategy, content architecture and search optimisation activities to strengthen organic visibility.</div>
         </div>
         <div class="case-metrics cols-2">
           <div class="metric"><div class="metric-n">1.73K</div><div class="metric-l">Clicks in 6 months</div></div>
@@ -563,17 +693,14 @@ footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align
       </div>
 
     </div>
-    <div style="display:flex;justify-content:center;">
-      <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a>
-    </div>
   </div>
 </div>
 
 <!-- TESTIMONIAL -->
-<div class="section-wrap">
+<div class="section-wrap deep">
   <div class="section-inner">
-    <div class="eyebrow">What clients say</div>
-    <h2 class="section-heading" style="margin-bottom:2.5rem;">Straight from the people I have worked with.</h2>
+    <div class="eyebrow">Client Feedback</div>
+    <h2 class="section-heading" style="margin-bottom:2.5rem;">Trusted to help move marketing forward.</h2>
     <div class="testimonial-card fade-in">
       <div class="testimonial-stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
       <p class="testimonial-quote">"I am confident in Tanveer's ability to produce relevant content and steer a business through good marketing."</p>
@@ -585,58 +712,59 @@ footer{padding:28px 6%;border-top:1px solid var(--border-mid);display:flex;align
   </div>
 </div>
 
+<!-- ABOUT -->
+<div id="about" class="section-wrap">
+  <div class="about-inner">
+    <div class="eyebrow">About Tanveer</div>
+    <h2 class="section-heading" style="margin-bottom:2rem;">I connect marketing strategy with the work needed to make it happen.</h2>
+    <p class="about-body fade-in">I'm Tanveer Nadeem, a marketing strategy and growth consultant working with B2B SaaS and founder-led businesses.</p>
+    <p class="about-body fade-in">My experience spans marketing leadership, SEO, content, paid campaigns, website optimisation, analytics and marketing systems across several industries.</p>
+    <p class="about-body fade-in">I enjoy understanding how a business works, identifying what needs to improve and building a practical plan around it.</p>
+    <p class="about-body fade-in">I'm equally comfortable developing a marketing roadmap, improving a landing page, setting up tracking or working with specialists to move a campaign forward.</p>
+    <p class="about-body fade-in">I don't believe effective marketing requires one person to do everything.</p>
+    <p class="about-body fade-in">It requires someone who understands the bigger picture, knows what to prioritise and takes responsibility for bringing the right work together.</p>
+    <p class="about-body fade-in" style="margin-bottom:2.4rem;">That's the role I aim to play for the businesses I work with.</p>
+    <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary fade-in">Let's Work Together</a>
+  </div>
+</div>
+
 <!-- FAQ -->
 <div class="section-wrap deep">
   <div class="section-inner">
     <div class="eyebrow">FAQ</div>
     <h2 class="section-heading" style="margin-bottom:2.5rem;">Questions founders usually ask.</h2>
     <div class="faq-list">
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What does fractional mean exactly?<span class="faq-icon">+</span></button><div class="faq-a">Fractional means you get a senior marketing partner working inside your business without hiring a full-time employee. You get the same strategic thinking and execution ownership, at a fraction of the cost and commitment. Most founders I work with do not need someone 40 hours a week. They need someone who knows what they are doing, owns it completely, and delivers results.</div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How is this different from hiring a marketing agency?<span class="faq-icon">+</span></button><div class="faq-a">With an agency, you are one of many clients. Work gets passed to junior staff, communication goes through account managers, and you rarely speak to the person actually doing the work. With me, you deal directly with one person who is fully invested in your business. No handoffs, no account managers, no one learning your business on your budget.</div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What does the engagement actually look like day to day?<span class="faq-icon">+</span></button><div class="faq-a">We start with a two-week audit and strategy phase. From there I build the systems and infrastructure, then move into ongoing execution. You get regular updates and full visibility into what is happening. I stay in close contact and move fast. You do not need to manage me — that is the point.</div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How quickly can you get started?<span class="faq-icon">+</span></button><div class="faq-a">Typically within one to two weeks of the initial call, depending on your timeline. I take a limited number of clients at any one time so I can give each one proper attention. If you are ready to move, the best first step is booking a discovery call so we can talk through what you need.</div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you work with early stage startups or more established businesses?<span class="faq-icon">+</span></button><div class="faq-a">Both, but the fit is usually best with businesses that have product-market fit and are ready to grow. If you have a product that works and marketing is the thing holding you back, that is where I do my best work.</div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What industries do you work in?<span class="faq-icon">+</span></button><div class="faq-a">I have worked across SaaS, real estate, healthcare, hospitality and legal. The industries change but the fundamentals do not. I pick things up fast and I do not need hand-holding to get up to speed.</div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much does it cost?<span class="faq-icon">+</span></button><div class="faq-a">Every engagement is scoped based on what your business actually needs — there are no fixed packages. The best way to get a sense of what makes sense for your situation is to book a discovery call. No obligation, no pressure.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What does a fractional marketing partner do?<span class="faq-icon">+</span></button><div class="faq-a">I work with your business on an ongoing basis to develop marketing strategy, establish priorities and lead execution without requiring you to hire a full-time senior marketing employee.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you handle execution or only strategy?<span class="faq-icon">+</span></button><div class="faq-a">Both, depending on the engagement. I have hands-on experience across website optimisation, analytics, SEO, content, email and campaigns. I also coordinate specialist support when needed.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you work with existing teams?<span class="faq-icon">+</span></button><div class="faq-a">Yes. I can collaborate with founders, marketing teams, developers, sales teams, freelancers and external partners.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you only work with SaaS businesses?<span class="faq-icon">+</span></button><div class="faq-a">No. B2B SaaS and founder-led businesses are my primary focus, but my experience includes real estate, hospitality, legal compliance, aesthetic medicine and other industries.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I hire you for a specific project?<span class="faq-icon">+</span></button><div class="faq-a">Yes. I consider defined projects involving marketing strategy, website optimisation, CRO, analytics, SEO and related areas alongside ongoing fractional engagements.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much does it cost to work with you?<span class="faq-icon">+</span></button><div class="faq-a">Pricing depends on the scope, responsibilities and level of involvement. We can discuss the appropriate arrangement during a discovery call.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do we get started?<span class="faq-icon">+</span></button><div class="faq-a">Book a discovery call. We'll discuss your business, current marketing activities, challenges and priorities to see whether there's a good fit.</div></div>
     </div>
   </div>
 </div>
 
-<!-- ABOUT -->
-<div id="about" class="section-wrap">
-  <div class="about-inner">
-    <div class="eyebrow">About me</div>
-    <h2 class="section-heading" style="margin-bottom:2rem;">The person behind the work.</h2>
-    <p class="about-body fade-in">I am a fractional marketing partner working with founder-led businesses who need marketing to actually move.</p>
-    <p class="about-body fade-in">I have spent the last three years embedded across industries — SaaS, real estate, healthcare, hospitality — and the one thing that does not change is what founders need. A clear strategy, a system that runs, and someone who treats the business like their own.</p>
-    <p class="about-body fade-in">I do not show up with a template and a report. I start by understanding what you are building, where the gaps are, and what will actually make a difference at your stage. Then I build it and run it.</p>
-    <p class="about-body fade-in">I work remotely with clients across the UK, US and beyond.</p>
-    <p class="about-body fade-in" style="margin-bottom:2.4rem;">If that sounds like what you have been looking for, let's talk.</p>
-    <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary fade-in">Book a Discovery Call</a>
-  </div>
-</div>
-
-<!-- CONTACT -->
-<div id="contact" class="section-wrap deep">
+<!-- FINAL CTA -->
+<div id="contact" class="section-wrap">
   <div class="contact-inner">
-    <div class="eyebrow" style="justify-content:center;">Get in touch</div>
-    <h2 class="contact-heading">Let's talk.</h2>
-    <p class="contact-sub">If you are thinking about getting your marketing sorted, the best place to start is a conversation. Book a 30-minute discovery call and we can talk through where you are, what you need, and whether I am the right fit. No pitch. No pressure. Just an honest conversation.</p>
+    <div class="eyebrow" style="justify-content:center;">Let's Work Together</div>
+    <h2 class="contact-heading">You don't need more disconnected marketing activity. You need a plan that gets executed.</h2>
+    <div class="contact-sub">
+      <p>If you're ready to bring more direction, consistency and accountability to your marketing, let's talk.</p>
+      <p>We'll discuss where your business is today, what's holding marketing back and how I can help.</p>
+    </div>
     <div class="contact-btns">
       <a href="https://calendly.com/tanveernadeemwork/30min" target="_blank" class="btn-primary">Book a Discovery Call</a>
-      <a href="https://wa.me/447956044519" target="_blank" class="btn-whatsapp">
-        <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        WhatsApp Me
-      </a>
+      <a href="mailto:tanveer@tanmediasoft.com" class="btn-secondary">Email Me</a>
     </div>
-    <p class="contact-note">Or email at <a href="mailto:tanveer@tanmediasoft.com">tanveer@tanmediasoft.com</a></p>
   </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">Tanveer<span>.</span></div>
-  <div class="footer-links"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  <div class="footer-links"><a href="#how">How I Work</a><a href="#services">Services</a><a href="#work">Selected Work</a><a href="#about">About</a><a href="#contact">Contact</a></div>
   <div class="footer-social">
     <a href="https://www.linkedin.com/in/tanveer-n-94129025a/" target="_blank" class="social-btn">in</a>
     <a href="https://wa.me/447956044519" target="_blank" class="social-btn">W</a>
